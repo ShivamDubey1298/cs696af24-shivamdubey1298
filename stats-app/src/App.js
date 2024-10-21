@@ -1,13 +1,11 @@
 import React from 'react';
 import Sidebar from './containers/sidebar/sidebar';
 import Header from './containers/header/header';
-// import SummaryStatistics from './containers/summaryStatistics/summaryStatistics';
-// import ChartWidget from './containers/chartWidget/chartWidget';
-// import PerformanceMetrics from './containers/PerformanceMetrics/PerformanceMetrics';
 import Footer from './containers/footer/footer';
 import CardComponent from './components/card';
 import './App.css';  
-
+import ChartWidget from './components/chartwidget';
+import PerformanceMetrics from './components/performanceMetrics';
 const App = () => {
 
   const cardData = [
@@ -19,14 +17,12 @@ const App = () => {
 
   return (
     <div className="layout">
-      {/* Sidebar */}
+     
       <div className="sidebar">
         <Sidebar />
       </div>
 
-      {/* Main content area */}
       <div className="main-content">
-        {/* Header */}
         <div className="main-header">
           <Header />
         </div>
@@ -35,14 +31,14 @@ const App = () => {
           <CardComponent key={index} header={card.header} text={card.text} />
         ))}
       </div>
-        {/* Actual content */}
-        <div className="container" style={{ marginTop: '70px' }}>  {/* Adjust the margin-top to ensure it doesn't overlap with the fixed header */}
-          {/* <SummaryStatistics />
-          <ChartWidget />
-          <PerformanceMetrics /> */}
+       
+        <div className="container" style={{ marginTop: '70px' }}>  
+          
+          <ChartWidget/>
+          <perfo />
         </div>
 
-        {/* Footer */}
+    
         <Footer />
       </div>
     </div>

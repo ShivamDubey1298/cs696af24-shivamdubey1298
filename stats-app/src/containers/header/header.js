@@ -5,17 +5,17 @@ import "./header.css";
 const Header = () => {
   return (
     <Navbar bg="light" expand="lg" className="px-3 nav-wrap">
-      {/* Left-aligned search bar */}
+      
       <Form inline className="flex-grow-1">
         <FormControl
           type="text"
           placeholder="Search..."
           className="mr-sm-2"
-          style={{ width: '300px' }} // Optional, can adjust width
+          style={{ width: '300px' }} 
         />
       </Form>
 
-      {/* Right-aligned notifications and user profile */}
+     
       <Nav className="ml-auto">
         <Nav.Link href="#"><FaBell /></Nav.Link>
         <Dropdown alignRight>

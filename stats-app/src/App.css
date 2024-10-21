@@ -1,6 +1,4 @@
-/* Layout.css */
 
-/* Full-height layout to ensure Sidebar and Header are on the same level */
 .layout {
   display: flex;
   height: 100vh;
@@ -10,25 +8,23 @@
 /* Sidebar styling */
 .sidebar {
   width: 200px;
-  background-color: #f8f9fa; /* Matches the Bootstrap light theme */
-  height: 100vh; /* Sidebar should take the full height */
-  position: fixed; /* Fixes the sidebar to the left */
+  background-color: #f8f9fa; 
+  height: 100vh; 
+  position: fixed; 
   top: 0;
   left: 0;
 }
 
-/* Main content area, pushed to the right of the sidebar */
 .main-content {
-  margin-left: 200px; /* Width of the sidebar */
+  margin-left: 200px; 
   flex-grow: 1;
   padding: 20px;
 }
 
-/* Header styling */
 .main-header {
   width: -webkit-fill-available;
   position: fixed;
   top: 0;
-  left: 200px; /* To ensure it's placed to the right of the sidebar */
-  z-index: 1000; /* To keep the header above the content */
+  left: 200px; 
+  z-index: 1000; 
 }
