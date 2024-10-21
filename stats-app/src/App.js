@@ -1,11 +1,11 @@
 import React from 'react';
 import Sidebar from './containers/sidebar/sidebar';
 import Header from './containers/header/header';
-import Footer from './containers/footer/footer';
 import CardComponent from './components/card';
 import './App.css';  
 import ChartWidget from './components/chartwidget';
 import PerformanceMetrics from './components/performanceMetrics';
+import Footer from './components/footer';
 const App = () => {
 
   const cardData = [
@@ -35,7 +35,7 @@ const App = () => {
         <div className="container" style={{ marginTop: '70px' }}>  
           
           <ChartWidget/>
-          <perfo />
+          <PerformanceMetrics />
         </div>
 
     
