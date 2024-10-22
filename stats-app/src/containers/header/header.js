@@ -1,5 +1,5 @@
 import { Navbar, Form, FormControl, Nav, Dropdown } from 'react-bootstrap';
-import { FaBell } from 'react-icons/fa';
+import { FaBell , FaUser } from 'react-icons/fa';
 import "./header.css";
 
 const Header = () => {
@@ -16,13 +16,13 @@ const Header = () => {
       </Form>
 
      
-      <Nav className="ml-auto">
+      <Nav className="ml-auto nav-wrap" >
         <Nav.Link href="#"><FaBell /></Nav.Link>
-        <Dropdown alignRight>
-          <Dropdown.Toggle variant="success">
-            Profile
+        <Dropdown alignRight >
+        <Dropdown.Toggle variant="success" id="dropdown-user-icon">
+        <FaUser />
           </Dropdown.Toggle>
-          <Dropdown.Menu>
+          <Dropdown.Menu style={{position:'-webkit-sticky'}}>
             <Dropdown.Item href="#/action-1">Settings</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Logout</Dropdown.Item>
           </Dropdown.Menu>
